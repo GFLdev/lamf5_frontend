@@ -18,6 +18,7 @@ Implemented technologies:
 - [NextJS](https://nextjs.org/)
 - [Apollo Client](https://www.apollographql.com)
 - [Tailwind](https://tailwindcss.com)
+- [AntD](https://ant.design)
 
 ## Build
 
@@ -27,7 +28,7 @@ Install node dependencies:
 npm install
 ```
 
-Connect to the API(code available at: https://github.com/GabFrancoL/lamf5_backend):
+Connect to the API (code available at: https://github.com/GabFrancoL/lamf5_backend):
 
 ```
 DB_URI = $prod_url      // Database URI
