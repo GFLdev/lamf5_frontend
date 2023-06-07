@@ -1,10 +1,29 @@
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import client from "@/api/api";
+import { gql } from "@apollo/client";
+import { GetStaticProps } from "next";
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await client.query({
+    query: gql`
+      query getAllMembers {
+        getAllMembers {
+          id
+          name
+          position
+        }
+      }
+    `,
+  });
+  
+  return {
+    props: {
+      articles: data.getAllMembers,
+    },
+  };
+}
 
 export default function Articles() {
-    const client = new ApolloClient({
-        cache: new InMemoryCache(),
-        uri: process.env.DB_URI
-    });
-
-    return (<main><ApolloProvider client={client}></ApolloProvider></main>);
+  return (
+    <main></main>
+  );
 }

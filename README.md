@@ -18,9 +18,8 @@ Implemented technologies:
 - [NextJS](https://nextjs.org/)
 - [Apollo Client](https://www.apollographql.com)
 - [Tailwind](https://tailwindcss.com)
-- [AntD](https://ant.design)
 
-## Build
+## Test
 
 Install node dependencies:
 
