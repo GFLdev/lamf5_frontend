@@ -58,16 +58,25 @@ export default function Header() {
     <>
       <header
         className={`
+<<<<<<< HEAD
         z-50
         w-full
+=======
+        w-full
+        z-50
+>>>>>>> 1418410 (Redesigning)
         fixed
         hidden
         md:flex
         lg:gap
         gap-16
         py-4
+<<<<<<< HEAD
         justify-center
         ${show ? "md:animate-show" : "md:animate-hide"}`}
+=======
+        justify-center`}
+>>>>>>> 1418410 (Redesigning)
       >
         <div className="flex flex-row items-center">
           <Link href="/">
@@ -84,7 +93,10 @@ export default function Header() {
           gap-16
           font-light
           text-lg
+<<<<<<< HEAD
           2xl:text-2xl
+=======
+>>>>>>> 1418410 (Redesigning)
           [&>*]:transition-colors
           [&>*]:duration-100
           hover:[&>*]:text-gray-400"
@@ -103,6 +115,7 @@ export default function Header() {
           </Link>
         </div>
       </header>
+<<<<<<< HEAD
       <button
         onClick={() => {
           setAnimationActive(() => true);
@@ -120,13 +133,19 @@ export default function Header() {
       >
         <LeftCircleOutlined />
       </button>
+=======
+>>>>>>> 1418410 (Redesigning)
       <nav
         className={`
           w-52
           -right-56
           h-screen
           shadow-2xl
+<<<<<<< HEAD
           bg-black
+=======
+          bg-1
+>>>>>>> 1418410 (Redesigning)
           flex
           flex-col
           fixed
@@ -150,11 +169,16 @@ export default function Header() {
         <button
           onClick={() => {
             setAnimationActive(() => true);
+<<<<<<< HEAD
             setCollapsed(() => true);
+=======
+            setCollapsed(() => !collapsed);
+>>>>>>> 1418410 (Redesigning)
           }}
           className={`
           text-4xl
           select-none
+<<<<<<< HEAD
           absolute
           left-4
           top-2`}
@@ -162,6 +186,20 @@ export default function Header() {
           <RightCircleOutlined />
         </button>
         <div className="flex flex-col items-center hover:cursor-pointer">
+=======
+          z-40
+          ${collapsed ? "fixed right-4 top-4" : "absolute left-4 top-2"}`}
+        >
+          {collapsed ? <LeftCircleOutlined /> : <RightCircleOutlined />}
+        </button>
+        <div
+          className="
+        flex
+        flex-col
+        items-center
+        hover:cursor-pointer"
+        >
+>>>>>>> 1418410 (Redesigning)
           <Link href="/">
             <Image src="/assets/logo.png" alt="LAMF5" width={48} height={48} />
           </Link>
