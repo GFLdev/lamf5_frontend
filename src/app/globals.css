@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --fg1: #fff;
-  --fg2: #daa520;
-  --fg3: #000;
-  --bg1: #000;
-  --bg2: #fff;
-  --bg3: #ddd;
-}
-
 * {
   box-sizing: border-box;
-}
-
-body {
-  color: var(--fg1);
-  background: var(--bg1);
 }

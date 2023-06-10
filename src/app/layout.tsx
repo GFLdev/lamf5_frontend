@@ -1,30 +1,33 @@
-import './globals.css';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Lato, Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
+import './globals.css'
+import { Montserrat, Lato } from 'next/font/google'
 
 export const lato = Lato({
   subsets: ["latin"],
-  weight: ["300", "400", "700"]
+  variable: "--font-lato",
+  weight: ["300", "400", "700"],
+  display: "swap"
 });
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["600"]
+  variable: "--font-montserrat",
+  display: "swap",
 });
-
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-
   return (
     <html lang="pt-BR">
-      <body>
+      <body className="relative text-white bg-black">
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
-};
+}

@@ -4,24 +4,17 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lato: ['var(--font-lato)'],
+        mont: ['var(--font-montserrat)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      backgroundColor: {
-        '1': 'var(--bg1);',
-        '2': 'var(--bg2);',
-        '3': 'var(--bg3);',
-      },
-      textColor: {
-        '1': 'var(--fg1)',
-        '2': 'var(--fg2)',
-        '3': 'var(--fg3)',
       },
       keyframes: {
         slidein: {
@@ -74,7 +67,7 @@ module.exports = {
       animation: {
         'slidein': 'slidein 200ms ease-in-out normal 1 forwards',
         'slideout': 'slideout 200ms ease-in-out normal 1 forwards',
-        'hide': 'hide 200ms 300ms ease-in-out normal 1 forwards',
+        'hide': 'hide 300ms ease-in-out normal 1 forwards',
         'show': 'show 300ms ease-in-out normal 1 forwards',
       }
     },
