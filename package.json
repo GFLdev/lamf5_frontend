@@ -10,13 +10,8 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
-<<<<<<< HEAD
     "@apollo/client": "^3.8.0-beta.2",
     "@apollo/experimental-nextjs-app-support": "^0.2.1",
-=======
-    "@types/node": "20.2.6",
-    "@types/react": "18.2.11",
->>>>>>> 1418410 (Redesigning)
     "@types/react-dom": "18.2.4",
     "antd": "^5.6.1",
     "autoprefixer": "10.4.14",

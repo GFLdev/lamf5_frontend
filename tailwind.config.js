@@ -67,11 +67,7 @@ module.exports = {
       animation: {
         'slidein': 'slidein 200ms ease-in-out normal 1 forwards',
         'slideout': 'slideout 200ms ease-in-out normal 1 forwards',
-<<<<<<< HEAD
         'hide': 'hide 300ms ease-in-out normal 1 forwards',
-=======
-        'hide': 'hide 200ms 300ms ease-in-out normal 1 forwards',
->>>>>>> 1418410 (Redesigning)
         'show': 'show 300ms ease-in-out normal 1 forwards',
       }
     },
