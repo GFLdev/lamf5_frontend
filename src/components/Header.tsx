@@ -161,7 +161,7 @@ export default function Header() {
         >
           <RightCircleOutlined />
         </button>
-        <div className="flex flex-col items-center hover:cursor-pointer">
+        <div className="flex flex-col items-center select-none hover:cursor-pointer">
           <Link href="/">
             <Image src="/assets/logo.png" alt="LAMF5" width={48} height={48} />
           </Link>

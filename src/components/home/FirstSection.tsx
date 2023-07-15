@@ -2,8 +2,8 @@
 
 export default function FirstSection() {
     return (
-        <section className="w-full h-screen z-0">
-            <></>
-        </section>
+      <section className="z-0 w-full h-screen shadow-lg">
+        <></>
+      </section>
     );
 }

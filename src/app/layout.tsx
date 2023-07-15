@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 import './globals.css'
 import { Montserrat, Lato } from 'next/font/google'
+import LayoutProvider from './layoutProvider';
 
 export const lato = Lato({
   subsets: ["latin"],
@@ -24,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="relative text-white bg-black">
-        <Header />
-        {children}
-        <Footer />
+        <LayoutProvider>{children}</LayoutProvider>
       </body>
     </html>
   );

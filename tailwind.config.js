@@ -45,11 +45,9 @@ module.exports = {
           '0%': {
             'opacity': '100%'
           },
-          '99.9%': {
-            'opacity': '0%'
-          },
           '100%': {
-            'visibility': 'hidden'
+            'visibility': 'hidden',
+            'opacity': '0%'
           }
         },
         show: {
@@ -72,5 +70,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: []
 }
